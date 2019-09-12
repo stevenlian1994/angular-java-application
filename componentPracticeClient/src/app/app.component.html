@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p [innerText]="title"></p>
+
+  <button (click)="changeTitle()">Click me</button>
+
+  
+  <!-- <a routerLink="home">home</a> -->
+  <!-- <app-home name="{{title}}"></app-home> -->
+  <app-home [childMessage] = "title"></app-home>
+<!-- <router-outlet></router-outlet> -->
