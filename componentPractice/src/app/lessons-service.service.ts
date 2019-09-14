@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class LessonsService {
   @Input('innerText')
+  
   listOfLessons:any
   constructor() {
    }
