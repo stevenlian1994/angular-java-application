@@ -1,6 +1,12 @@
 <p>
   home-component works!
 </p>
+<button (click)="changeList()">Click me</button>
+
+<p [innerText]="title"></p>
+<ul>
+  <li *ngFor="let lesson of lessons">{{lesson}}</li>
+</ul>
 <a routerLink="list">Lessons List Component</a>
 
 <router-outlet></router-outlet>

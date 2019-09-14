@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LessonsService {
+  @Input('innerText')
   listOfLessons:any
   constructor() {
    }

@@ -6,8 +6,9 @@ import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./lessons-list.component.css']
 })
 export class LessonsListComponent implements OnInit {
-  @Input ()
-  lessons: any;
+  @Input ('lessons')
+  lessons: any = [0,5,10];
+  
 
   constructor() { }
 
