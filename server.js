@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 var path = require('path')
 
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/componentPractice/dist/componentPractice' ));
+app.use(express.static(__dirname + '/componentPracticeClient/dist/componentPracticeClient' ));
 
 // app.get('/', function(req,res){
 //     Movie.find({}, function(err,movies){
@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/componentPractice/dist/componentPractice' )
 // })
 
 app.all("*", (req,res,next) => {
-    res.sendFile(path.resolve("./componentPractice/dist/componentPractice/index.html"))
+    res.sendFile(path.resolve("./componentPracticeClient/dist/componentPracticeClient/index.html"))
 });
 
 app.listen(8000, function(){
